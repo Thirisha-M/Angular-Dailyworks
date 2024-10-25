@@ -3,25 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
-import { HeaderComponent } from './header/header.component';
-import { HeaderRightComponent } from './header/header-right/header-right.component';
+import { NgIfDemoComponent } from './ng-if-demo/ng-if-demo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    HeaderRightComponent
-=======
-
-@NgModule({
-  declarations: [
-    AppComponent
->>>>>>> 6c0a9a9ee579bf9e8b684d7ca9c557b486bcb36e
+    NgIfDemoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
