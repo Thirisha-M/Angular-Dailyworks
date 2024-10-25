@@ -1,0 +1,26 @@
+<div class="nav">
+    <a *ngFor="let menu of listofMenu" href="#">{{menu}}</a>
+</div>
+
+<div *ngFor="let item of listofString">
+    <p>Current element of an array is: {{item}}</p>
+</div>
+<div class="container">
+    <div class="ekart--product--item" *ngFor="let prod of products">
+        <div class="ekart-wishlist-sale-container">
+            <div class="ekart--add--to--wishlist">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="ekart-on-sale-tag">75% OFF</div>
+        </div>
+        <div class="ekart--product--image">
+            <img [src]="prod.image" class="ekart--product--image">
+        </div>
+        <div class="ekart--add--to--price">
+            {{prod.price}}
+        </div>
+        <div class="ekart--product--name">{{prod.name}}</div>
+        <div class="ekart--product--category">{{prod.gender}}. {{prod.category}} .{{prod .brand}}</div>
+        <div class="ekart--product--available-colors">{{prod.color}} . Best Seller</div>
+    </div>
+</div>
