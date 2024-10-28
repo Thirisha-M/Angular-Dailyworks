@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class NavbarcomponentComponent {
 
+list={
+  product:"Product",
+  solution:"Solutions",
+  resources:"Resources",
+  pricing:"Pricing",
+  img:"/assets/images/wix logo.png"
+}
 }

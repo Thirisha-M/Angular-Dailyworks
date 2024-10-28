@@ -1,0 +1,20 @@
+h2{
+    color: black;
+    font-size: 50px;
+    width: px;
+    margin-left: 10%;
+}
+img{
+    margin-left: 10%;
+}
+.subcontent1{
+    margin-left: 150px;
+}
+.subcontent1,p{
+width:200px;
+}
+.subcontents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
