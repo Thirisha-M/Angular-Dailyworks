@@ -8,7 +8,7 @@ import { getstartedClass } from 'src/services.ts/getstarted.service';
   providers:[getstartedClass]
 })
 export class NavbarrightComponent {
-  Buttonvalue:string="Get Started"
+  Buttonvalue:string="Get Startedd"
 
   list={
     img:"/assets/images/net logo.png"
