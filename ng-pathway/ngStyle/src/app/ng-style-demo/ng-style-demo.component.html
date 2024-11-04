@@ -1,12 +1,5 @@
-<div class="nav">
-    <a *ngFor="let menu of listofMenu" href="#">{{menu}}</a>
-</div>
 
-<div *ngFor="let item of listofString">
-    <p>Current element of an array is: {{item}}</p>
-</div>
 <div class="container">
-    <!-- ngFor -->
     <div class="ekart--product--item" *ngFor="let prod of products">
         <div class="ekart-wishlist-sale-container">
             <div class="ekart--add--to--wishlist">
@@ -23,5 +16,8 @@
         <div class="ekart--product--name">{{prod.name}}</div>
         <div class="ekart--product--category">{{prod.gender}}. {{prod.category}} .{{prod .brand}}</div>
         <div class="ekart--product--available-colors">{{prod.color}} . Best Seller</div>
-    </div>
+        <!-- ngStyle -->
+        <div class="ekart--product--in--stocks" [ngStyle]="{fontWeight:'bold',color:prod.is_in_inventory ? 'Green':'Red'}">
+            {{prod.is_in_inventory ? 'Available in stock' : 'Not in stock' }}</div>
+        </div>
 </div>
